@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+###Including canvasjs in angular project
+1) either npm install canvasjs or download canvasjs package from website
+2) Import the file. If intalled using npm it should be as folows:
+   
+   e.g.import * as CanvasJS from "canvasjs/dist/canvasjs.min.js";
+   
+   else give the path of the canvasjs downloaded package as folows:
+   
+   e.g. import * as CanvasJS from "../../assets/canvasjs/canvasjs.min.js";
+
+Note: Its a good practice to keep your external files be it javascript or css or any other file in "assets" folder provided in angular project   
